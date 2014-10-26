@@ -1,0 +1,29 @@
+{
+  "name": "svg-path-generator",
+  "version": "0.0.0",
+  "description": "Easily generate svg path strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mathisonian/svg-path-generator"
+  },
+  "keywords": [
+    "svg",
+    "path",
+    "svg-path",
+    "svg-path-generator"
+  ],
+  "author": "Matthew Conlen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathisonian/svg-path-generator/issues"
+  },
+  "homepage": "https://github.com/mathisonian/svg-path-generator",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.0.1"
+  }
+}
