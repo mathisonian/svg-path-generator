@@ -54,22 +54,30 @@ both paths are equivalent.
 ### svg path methods
 
 * `moveTo(x, y)`
-    * multiple coordinates can be provided, i.e. `Path.moveTo(x1, y1, x2, y2) is equivalent to Path.moveTo(x1, y1).moveTo(x2, y2)
+    * moves current position to x,y without drawing anything
+    * multiple sets of coordinates can be provided, i.e. `Path.moveTo(x1, y1, x2, y2) is equivalent to Path.moveTo(x1, y1).moveTo(x2, y2)
 * `lineTo(x, y)`
-    * multiple coordinates can be provided
+    * moves current position to x,y while drawing a line from previous position
+    * multiple sets of coordinates can be provided
 * `horizontalLineTo(x)`
+    * move from previous position along the x axis, drawing a line
 * `verticalLineTo(y)`
+    * move from previous position along the y axis, drawing a line
 * `curveTo(x1, y1, x2, y2, x, y)`
-    * Draws a cubic Bézier curve from the current point to (x,y) using (x1,y1) as the control point at the beginning of the curve and (x2,y2) as the control point at the end of the curve. C (uppercase) indicates that absolute coordinates will follow; c (lowercase) indicates that relative coordinates will follow. Multiple sets of coordinates may be specified to draw a polybézier. At the end of the command, the new current point becomes the final (x,y) coordinate pair used in the polybézier.
+    * Draws a cubic Bézier curve from the current point to (x,y) using (x1,y1) as the control point at the beginning of the curve and (x2,y2) as the control point at the end of the curve.
+    * multiple sets of coordinates can be provided
 
 * `smoothCurveTo(x2, y2, x, y)`
-    * Draws a cubic Bézier curve from the current point to (x,y). The first control point is assumed to be the reflection of the second control point on the previous command relative to the current point. (If there is no previous command or if the previous command was not an C, c, S or s, assume the first control point is coincident with the current point.) (x2,y2) is the second control point (i.e., the control point at the end of the curve). S (uppercase) indicates that absolute coordinates will follow; s (lowercase) indicates that relative coordinates will follow. Multiple sets of coordinates may be specified to draw a polybézier. At the end of the command, the new current point becomes the final (x,y) coordinate pair used in the polybézier.
+    * Draws a cubic Bézier curve from the current point to (x,y). The first control point is assumed to be the reflection of the second control point on the previous command relative to the current point.
+    * multiple sets of coordinates can be provided
 
 * `bezierCurveTo(x1, y1, x, y)`
-    * Draws a quadratic Bézier curve from the current point to (x,y) using (x1,y1) as the control point. Q (uppercase) indicates that absolute coordinates will follow; q (lowercase) indicates that relative coordinates will follow. Multiple sets of coordinates may be specified to draw a polybézier. At the end of the command, the new current point becomes the final (x,y) coordinate pair used in the polybézier.
+    * Draws a quadratic Bézier curve from the current point to (x,y) using (x1,y1) as the control point. 
+    * multiple sets of coordinates can be provided
 
 * `smoothBezierCurveTo(x, y)`
-    * Draws a quadratic Bézier curve from the current point to (x,y). The control point is assumed to be the reflection of the control point on the previous command relative to the current point. (If there is no previous command or if the previous command was not a Q, q, T or t, assume the control point is coincident with the current point.) T (uppercase) indicates that absolute coordinates will follow; t (lowercase) indicates that relative coordinates will follow. At the end of the command, the new current point becomes the final (x,y) coordinate pair used in the polybézier.
+    * Draws a quadratic Bézier curve from the current point to (x,y). The control point is assumed to be the reflection of the control point on the previous command relative to the current point.
+    * multiple sets of coordinates can be provided
 
 
 ### other methods
