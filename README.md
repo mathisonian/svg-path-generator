@@ -55,7 +55,7 @@ both paths are equivalent.
 
 * `moveTo(x, y)`
     * moves current position to x,y without drawing anything
-    * multiple sets of coordinates can be provided, i.e. `Path.moveTo(x1, y1, x2, y2) is equivalent to Path.moveTo(x1, y1).moveTo(x2, y2)
+    * multiple sets of coordinates can be provided, i.e. `Path.moveTo(x1, y1, x2, y2)` is equivalent to `Path.moveTo(x1, y1).moveTo(x2, y2)`
 * `lineTo(x, y)`
     * moves current position to x,y while drawing a line from previous position
     * multiple sets of coordinates can be provided
