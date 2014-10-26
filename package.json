@@ -1,6 +1,6 @@
 {
   "name": "svg-path-generator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Easily generate svg path strings",
   "main": "index.js",
   "scripts": {
