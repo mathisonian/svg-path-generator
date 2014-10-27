@@ -35,12 +35,9 @@ var Path = require('svg-path-generator');
 
 var path = Path()
             .moveTo(10, 25)
-            .relative()
-            .lineTo(0, 50)
-            .relative()
-            .lineTo(50, 0)
-            .relative()
-            .lineTo(-50, -50)
+            .relative().lineTo(0, 50)
+            .relative().lineTo(50, 0)
+            .relative().lineTo(-50, -50)
             .end();
 
 console.log(path) // M 10 25 l 0 50 l 50 0 l -50 -50
