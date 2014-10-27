@@ -78,7 +78,7 @@ both paths are equivalent.
     * Draws a quadratic Bézier curve from the current point to (x,y). The control point is assumed to be the reflection of the control point on the previous command relative to the current point.
     * multiple sets of coordinates can be provided
 
-* `ellipticalArcTo(rx, ry, xAxisRotation, largeArcFlag, sweepFlag, x, y)`
+* `ellipticalArc(rx, ry, xAxisRotation, largeArcFlag, sweepFlag, x, y)`
     * Draws an elliptical arc from the current point to (x, y). The size and orientation of the ellipse are defined by two radii (rx, ry) and an x-axis-rotation, which indicates how the ellipse as a whole is rotated relative to the current coordinate system. The center (cx, cy) of the ellipse is calculated automatically to satisfy the constraints imposed by the other parameters. large-arc-flag and sweep-flag contribute to the automatic calculations and help determine how the arc is drawn.
 
 
