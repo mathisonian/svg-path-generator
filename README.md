@@ -81,6 +81,8 @@ both paths are equivalent.
 * `ellipticalArc(rx, ry, xAxisRotation, largeArcFlag, sweepFlag, x, y)`
     * Draws an elliptical arc from the current point to (x, y). The size and orientation of the ellipse are defined by two radii (rx, ry) and an x-axis-rotation, which indicates how the ellipse as a whole is rotated relative to the current coordinate system. The center (cx, cy) of the ellipse is calculated automatically to satisfy the constraints imposed by the other parameters. large-arc-flag and sweep-flag contribute to the automatic calculations and help determine how the arc is drawn.
 
+* `close()`
+    * closes the current path
 
 ### other methods
 
