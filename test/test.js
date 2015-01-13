@@ -58,4 +58,30 @@ describe('svg-path-generator tests', function() {
     });
 
 
+
+    it('should work with a closed path', function() {
+        var path1 = Path()
+                    .moveTo(10, 25)
+                    .lineTo(10, 75)
+                    .lineTo(60, 75)
+                    .relative()
+                    .lineTo(-50, -50)
+                    .close()
+                    .end();
+
+        var path2 = Path()
+                    .moveTo(10, 25)
+                    .lineTo(10, 75)
+                    .lineTo(60, 75)
+                    .relative()
+                    .lineTo(-50, -50)
+                    .closePath()
+                    .end();
+
+        expect(path1).to.be(path2);
+
+        expect(path1).to.be('M 10 25 L 10 75 L 60 75 l -50 -50 Z');
+    });
+
+
 });
