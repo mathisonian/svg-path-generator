@@ -13,7 +13,7 @@ npm install svg-path-generator
 
 ## usage
 
-```
+```js
 var Path = require('svg-path-generator');
 
 var path = Path()
@@ -30,7 +30,7 @@ console.log(path) // M 10 25 L 10 75 L 60 75 L 10 25
 to use relative coordinates, call `.relative()` before any method
 
 e.g.
-```
+```js
 var Path = require('svg-path-generator');
 
 var path = Path()
